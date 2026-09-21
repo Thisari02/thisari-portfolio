@@ -18,6 +18,7 @@ export default function ProjectsGrid() {
     { label: 'IoT & Edge', value: 'IoT Research Project' },
     { label: 'Web Apps', value: 'Web Application' },
     { label: 'Business Solutions', value: 'Business Website' },
+    { label: 'EdTech', value: 'EdTech / Educational Technology' },
   ];
 
   const filteredProjects = PROJECTS.filter((project) => {
@@ -100,6 +101,53 @@ interface ProjectCardProps {
   index: number;
   isExpanded: boolean;
   onToggleExpand: () => void;
+}
+
+function FeatureStatusList({
+  title,
+  items,
+  tone
+}: {
+  title: string;
+  items: string[];
+  tone: 'emerald' | 'purple' | 'amber';
+}) {
+  const styles = {
+    emerald: {
+      border: 'border-emerald-500/20',
+      background: 'bg-emerald-950/10',
+      text: 'text-emerald-400',
+      marker: '✓'
+    },
+    purple: {
+      border: 'border-purple-500/20',
+      background: 'bg-purple-950/10',
+      text: 'text-purple-400',
+      marker: '◇'
+    },
+    amber: {
+      border: 'border-amber-500/20',
+      background: 'bg-amber-950/10',
+      text: 'text-amber-400',
+      marker: '◌'
+    }
+  }[tone];
+
+  return (
+    <div className={`p-4 rounded-2xl ${styles.background} border ${styles.border} space-y-2.5`}>
+      <h5 className={`text-[10px] font-mono font-bold uppercase tracking-widest ${styles.text}`}>
+        {title}
+      </h5>
+      <ul className="space-y-1.5 text-xs text-slate-300 leading-relaxed">
+        {items.map((item) => (
+          <li key={item} className="flex items-start gap-2">
+            <span className={`${styles.text} mt-0.5 flex-shrink-0`}>{styles.marker}</span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 function ProjectCard({ project, index, isExpanded, onToggleExpand }: ProjectCardProps) {
@@ -303,11 +351,11 @@ function ProjectCard({ project, index, isExpanded, onToggleExpand }: ProjectCard
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-5 rounded-2xl bg-white/[0.01] border border-white/5 shadow-inner">
                   <div className="space-y-3 flex flex-col justify-between">
                     <div>
-                      <span className="text-xs font-mono font-bold text-emerald-400 flex items-center gap-1.5 uppercase tracking-widest">
-                        <span>✅</span> Live Website
+                      <span className={`text-xs font-mono font-bold flex items-center gap-1.5 uppercase tracking-widest ${project.liveUrl ? 'text-emerald-400' : 'text-amber-400'}`}>
+                        <span>{project.liveUrl ? '✅' : '◌'}</span> {project.liveUrl ? 'Live Website' : 'Project Status'}
                       </span>
                       <p className="text-[11px] text-slate-500 font-mono mt-1">
-                        Production Live Environment
+                        {project.liveUrl ? 'Production Live Environment' : 'Prototype/MVP • Active personal project'}
                       </p>
                     </div>
                     {project.liveUrl ? (
@@ -392,6 +440,30 @@ function ProjectCard({ project, index, isExpanded, onToggleExpand }: ProjectCard
                     ))}
                   </div>
                 </div>
+
+                {project.implementationStatus && (
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <FeatureStatusList
+                      title="Implemented"
+                      items={project.implementationStatus.implemented}
+                      tone="emerald"
+                    />
+                    {project.implementationStatus.prototype && (
+                      <FeatureStatusList
+                        title="Prototype"
+                        items={project.implementationStatus.prototype}
+                        tone="purple"
+                      />
+                    )}
+                    {project.implementationStatus.inProgress && (
+                      <FeatureStatusList
+                        title="In Progress"
+                        items={project.implementationStatus.inProgress}
+                        tone="amber"
+                      />
+                    )}
+                  </div>
+                )}
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
                   <div className="p-5 rounded-2xl bg-red-950/10 border border-red-500/20 space-y-3">

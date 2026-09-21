@@ -76,6 +76,64 @@ export const SKILLS: Skill[] = [
 
 export const PROJECTS: Project[] = [
   {
+    id: 'ol-maths-hub',
+    title: 'O/L Maths Hub',
+    subtitle: 'Grade 10–11 Mathematics Learning Platform',
+    description: 'An active personal EdTech project and prototype/MVP for Sri Lankan Grade 10–11 students, combining curriculum-based lessons, guided problem solving, practice, quizzes, and progress-aware revision.',
+    longDescription: 'O/L Maths Hub is an interactive Mathematics learning platform designed for Sri Lankan Grade 10–11 students. It combines structured curriculum-based lessons, theory, worked examples, “Which Method?” guidance, practice, quizzes, exam-style questions, mistake analysis, revision, and progress tracking in one learning experience.\n\nThe current MVP includes Grade 10 Term 1 with 12 integrated topics and a data-driven Grade → Term → Topic → Lesson architecture. The product is being developed as an active personal project; it is not presented as a production deployment or officially approved curriculum platform.',
+    image: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&q=80&w=800',
+    tags: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Node.js', 'Express.js', 'REST API', 'MongoDB', 'EdTech'],
+    status: 'Active',
+    year: '2026',
+    category: 'EdTech / Educational Technology',
+    featured: true,
+    role: 'Founder / Product Designer / Full-Stack Developer / Mathematics Educator',
+    roleDescription: 'Defining the learning product, designing the student experience, building the full-stack architecture, and shaping curriculum-aligned Mathematics content.',
+    keyFeatures: [
+      'Grade 10 Term 1 curriculum with 12 integrated topics',
+      'Data-driven Grade → Term → Topic → Lesson structure',
+      'Interactive lessons and practice experience',
+      'Method-selection learning with “Which Method?” guidance',
+      'Diagnostic quizzes and progress features',
+      'Exam-style questions, mistake analysis, and revision workflows',
+      'Authentication/RBAC and security architecture',
+      'Math Labs in development: Graph Lab, Geometry Explorer, Solid Visualizer'
+    ],
+    challenges: [
+      'Structuring curriculum content for reusable learning flows',
+      'Making method selection and worked examples clear for different learners',
+      'Designing progress and diagnostic features that support revision',
+      'Planning secure full-stack foundations for future content and user growth'
+    ],
+    solutions: [
+      'Data-driven curriculum hierarchy for reusable Grade, Term, Topic, and Lesson content',
+      'Interactive lesson and practice patterns focused on guided problem solving',
+      'Diagnostic quiz and progress architecture for identifying learning gaps',
+      'React and TypeScript frontend with a Node.js and Express.js REST API foundation'
+    ],
+    impact: 'Aims to make structured, practical Mathematics learning more accessible to Sri Lankan secondary students through a locally relevant digital learning experience.',
+    technologiesUsed: {
+      frontend: ['React', 'TypeScript', 'Vite', 'Tailwind CSS'],
+      backend: ['Node.js', 'Express.js', 'REST API'],
+      database: ['MongoDB']
+    },
+    implementationStatus: {
+      implemented: [
+        'Grade 10 Term 1 content covering 12 integrated topics',
+        'Data-driven curriculum navigation and lesson architecture',
+        'Interactive lesson, practice, quiz, and progress foundations',
+        'Authentication/RBAC and security architecture foundations'
+      ],
+      prototype: [
+        'AI Maths Assistant'
+      ],
+      inProgress: [
+        'Complete Grade 10–11 curriculum',
+        'Graph Lab, Geometry Explorer, and Solid Visualizer Maths Labs'
+      ]
+    }
+  },
+  {
     id: 'ceylonvolt',
     title: 'CeylonVolt',
     subtitle: 'Smart Electricity Monitoring & Bill Prediction Platform',

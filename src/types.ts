@@ -11,7 +11,7 @@ export interface Project {
   challenges: string | string[];
   solutions: string | string[];
   impact: string;
-  status: 'Completed' | 'Ongoing';
+  status: 'Completed' | 'Ongoing' | 'Active';
   year: string;
   category: string;
   keyFeatures: string[];
@@ -29,6 +29,11 @@ export interface Project {
   };
   featured?: boolean;
   videoUrl?: string;
+  implementationStatus?: {
+    implemented: string[];
+    prototype?: string[];
+    inProgress?: string[];
+  };
 }
 
 export interface Skill {
