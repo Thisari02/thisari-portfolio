@@ -28,47 +28,44 @@ export const ACHIEVEMENTS: Achievement[] = [
 ];
 
 export const SKILLS: Skill[] = [
-  { name: 'React', level: 'Proficient', category: 'Frontend Development' },
-  { name: 'TypeScript', level: 'Intermediate', category: 'Frontend Development' },
-  { name: 'JavaScript (ES6+)', level: 'Proficient', category: 'Frontend Development' },
+  { name: 'React', level: 'Advanced', category: 'Frontend Development' },
+  { name: 'TypeScript', level: 'Proficient', category: 'Frontend Development' },
+  { name: 'JavaScript', level: 'Proficient', category: 'Frontend Development' },
   { name: 'HTML5', level: 'Advanced', category: 'Frontend Development' },
   { name: 'CSS3', level: 'Advanced', category: 'Frontend Development' },
   { name: 'Tailwind CSS', level: 'Proficient', category: 'Frontend Development' },
+  { name: 'Vite', level: 'Proficient', category: 'Frontend Development' },
   { name: 'Responsive Web Design', level: 'Advanced', category: 'Frontend Development' },
   { name: 'Framer Motion', level: 'Intermediate', category: 'Frontend Development' },
 
-  { name: 'Node.js', level: 'Intermediate', category: 'Backend Development' },
-  { name: 'Express.js', level: 'Intermediate', category: 'Backend Development' },
+  { name: 'Node.js', level: 'Proficient', category: 'Backend Development' },
+  { name: 'Express.js', level: 'Proficient', category: 'Backend Development' },
   { name: 'REST API Development', level: 'Proficient', category: 'Backend Development' },
-  { name: 'Authentication (JWT)', level: 'Intermediate', category: 'Backend Development' },
+  { name: 'Authentication & Authorization', level: 'Intermediate', category: 'Backend Development' },
   { name: 'CRUD Operations', level: 'Proficient', category: 'Backend Development' },
+  { name: 'API Validation', level: 'Intermediate', category: 'Backend Development' },
+  { name: 'Role-Based Access Control (RBAC)', level: 'Intermediate', category: 'Backend Development' },
 
   { name: 'MongoDB', level: 'Proficient', category: 'Database' },
-  { name: 'Firebase / Firestore', level: 'Proficient', category: 'Database' },
-  { name: 'MySQL', level: 'Intermediate', category: 'Database' },
-  { name: 'Mongoose ODM', level: 'Intermediate', category: 'Database' },
+  { name: 'Mongoose ODM', level: 'Proficient', category: 'Database' },
+  { name: 'MongoDB Schema Design', level: 'Intermediate', category: 'Database' },
+  { name: 'Firebase / Firestore', level: 'Intermediate', category: 'Database' },
 
   { name: 'Git', level: 'Proficient', category: 'Development Tools' },
   { name: 'GitHub', level: 'Proficient', category: 'Development Tools' },
   { name: 'Postman', level: 'Proficient', category: 'Development Tools' },
-  { name: 'VS Code', level: 'Advanced', category: 'Development Tools' },
+  { name: 'VS Code', level: 'Proficient', category: 'Development Tools' },
   { name: 'Figma', level: 'Intermediate', category: 'Development Tools' },
-  { name: 'Notion', level: 'Proficient', category: 'Development Tools' },
-
-  { name: 'Vercel', level: 'Proficient', category: 'Deployment & Hosting' },
-  { name: 'Netlify', level: 'Intermediate', category: 'Deployment & Hosting' },
-  { name: 'Render', level: 'Intermediate', category: 'Deployment & Hosting' },
-
-  { name: 'JavaScript', level: 'Proficient', category: 'Programming Languages' },
-  { name: 'TypeScript', level: 'Intermediate', category: 'Programming Languages' },
-  { name: 'Python', level: 'Intermediate', category: 'Programming Languages' },
-  { name: 'Java', level: 'Learning', category: 'Programming Languages' },
+  { name: 'Vercel', level: 'Proficient', category: 'Development Tools' },
+  { name: 'Render', level: 'Intermediate', category: 'Development Tools' },
 
   { name: 'Component-Based Architecture', level: 'Proficient', category: 'Software Engineering' },
-  { name: 'Responsive UI Development', level: 'Advanced', category: 'Software Engineering' },
   { name: 'API Integration', level: 'Proficient', category: 'Software Engineering' },
+  { name: 'System Architecture', level: 'Intermediate', category: 'Software Engineering' },
+  { name: 'Security-Aware Development', level: 'Intermediate', category: 'Software Engineering' },
+  { name: 'Data-Driven Architecture', level: 'Intermediate', category: 'Software Engineering' },
   { name: 'Debugging & Troubleshooting', level: 'Proficient', category: 'Software Engineering' },
-  { name: 'Version Control', level: 'Proficient', category: 'Software Engineering' },
+  { name: 'Testing & QA', level: 'Intermediate', category: 'Software Engineering' },
   { name: 'Problem Solving', level: 'Proficient', category: 'Software Engineering' },
   { name: 'UI/UX Implementation', level: 'Proficient', category: 'Software Engineering' },
   { name: 'Performance Optimization', level: 'Intermediate', category: 'Software Engineering' }
@@ -77,15 +74,15 @@ export const SKILLS: Skill[] = [
 export const PROJECTS: Project[] = [
   {
     id: 'ol-maths-hub',
-    title: 'O/L Maths Hub',
-    subtitle: 'Grade 10–11 Mathematics Learning Platform',
-    description: 'An active personal EdTech project and prototype/MVP for Sri Lankan Grade 10–11 students, combining curriculum-based lessons, guided problem solving, practice, quizzes, and progress-aware revision.',
-    longDescription: 'O/L Maths Hub is an interactive Mathematics learning platform designed for Sri Lankan Grade 10–11 students. It combines structured curriculum-based lessons, theory, worked examples, “Which Method?” guidance, practice, quizzes, exam-style questions, mistake analysis, revision, and progress tracking in one learning experience.\n\nThe current MVP includes Grade 10 Term 1 with 12 integrated topics and a data-driven Grade → Term → Topic → Lesson architecture. The product is being developed as an active personal project; it is not presented as a production deployment or officially approved curriculum platform.',
+    title: 'O/L Maths Hub | Grade 10–11',
+    subtitle: 'Interactive Mathematics EdTech Platform',
+    description: 'An interactive EdTech platform for Sri Lankan Grade 10–11 Mathematics, designed around structured learning, method selection, guided practice, and exam preparation.',
+    longDescription: 'O/L Maths Hub is an active personal project and prototype/MVP for Sri Lankan Grade 10–11 students. It combines structured curriculum-based lessons, theory, worked examples, “Which Method?” guidance, guided practice, quizzes, exam-style questions, common-mistake analysis, quick revision, and progress tracking.\n\nThe current curriculum milestone is Grade 10 Term 1, structured into 12 topics: Perimeter, Square Root, Fractions, Binomial Expressions, Congruence of Triangles, Area, Factors of Quadratic Expressions, Triangles I, Triangles II, Inverse Proportions, Data Representation, and Least Common Multiple of Algebraic Expressions. Interactive Maths Labs are in progress, including Graph Lab, Geometry Explorer, and Solid Visualizer.',
     image: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&q=80&w=800',
     tags: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Node.js', 'Express.js', 'REST API', 'MongoDB', 'EdTech'],
     status: 'Active',
     year: '2026',
-    category: 'EdTech / Educational Technology',
+    category: 'EdTech',
     featured: true,
     role: 'Founder / Product Designer / Full-Stack Developer / Mathematics Educator',
     roleDescription: 'Defining the learning product, designing the student experience, building the full-stack architecture, and shaping curriculum-aligned Mathematics content.',
@@ -122,7 +119,8 @@ export const PROJECTS: Project[] = [
         'Grade 10 Term 1 content covering 12 integrated topics',
         'Data-driven curriculum navigation and lesson architecture',
         'Interactive lesson, practice, quiz, and progress foundations',
-        'Authentication/RBAC and security architecture foundations'
+        'Authentication and RBAC architecture foundations',
+        'Responsive student learning interface'
       ],
       prototype: [
         'AI Maths Assistant'
@@ -136,20 +134,19 @@ export const PROJECTS: Project[] = [
   {
     id: 'ceylonvolt',
     title: 'CeylonVolt',
-    subtitle: 'Smart Electricity Monitoring & Bill Prediction Platform',
-    description: 'A Sri Lanka-focused smart electricity monitoring platform designed to help households calculate, analyze, and predict electricity bills using the latest CEB tariff structure.',
-    longDescription: 'CeylonVolt is a Sri Lanka-focused smart electricity monitoring platform designed to help households calculate, analyze, and predict electricity bills using the latest CEB tariff structure. The application transforms complex electricity pricing into an intuitive dashboard, enabling users to track consumption trends, estimate future costs, review historical readings, and receive insights for reducing energy usage.\n\nThe project focuses on creating a practical digital solution for everyday electricity management while demonstrating modern frontend engineering, data visualization, responsive design, and scalable application architecture.',
+    subtitle: 'Smart Electricity Monitoring Platform',
+    description: 'A full-stack electricity monitoring and bill-management platform designed around meter readings, tariff-based bill estimation, and secure user accounts.',
+    longDescription: 'CeylonVolt is a full-stack electricity monitoring and bill-management platform. Its completed core implementation includes a modular Node.js and Express.js backend with routes, controllers, services, models, middleware, REST API versioning, MongoDB/Mongoose integration, secure authentication, tariff logic, meter readings, and bill estimation.\n\nThe platform is a software project rather than a production commercial electricity service. It does not claim integration with an actual utility provider.',
     image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=800',
-    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Node.js', 'Express.js', 'MongoDB'],
-    liveUrl: 'https://ceylonvolt.example.com',
+    tags: ['React', 'TypeScript', 'Vite', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'REST API', 'JWT', 'Zod', 'Vitest', 'Swagger/OpenAPI'],
     githubUrl: 'https://github.com/Thisari02/ceylonvolt',
-    status: 'Ongoing',
+    status: 'Active',
     year: '2026',
     category: 'Full Stack Web Application',
     featured: true,
     videoUrl: 'https://res.cloudinary.com/fv9dk5wa/video/upload/v1784202482/Recording_2026-07-16_171644_qspqgu.mp4',
-    role: 'Lead Full Stack Developer',
-    roleDescription: 'Designed and developed the electricity monitoring calculator, predictive tariff analytics, and smart notification threshold managers.',
+    role: 'Full-Stack Developer',
+    roleDescription: 'Built the frontend and completed core backend architecture, authentication, validation, tariff/billing logic, and API documentation.',
     keyFeatures: [
       'Electricity bill calculator',
       'Meter reading tracker',
@@ -158,66 +155,79 @@ export const PROJECTS: Project[] = [
       'Cost prediction',
       'Energy-saving recommendations',
       'Responsive dashboard',
-      'Smart analytics'
+      'Secure user accounts',
+      'REST API and OpenAPI documentation',
+      'Automated integration and boundary tests'
     ],
     challenges: [
       'Implementing Sri Lankan CEB tariff calculations accurately',
       'Handling multiple billing slabs and edge cases',
       'Designing an intuitive dashboard for complex billing information',
-      'Building a scalable architecture for future smart-home integration'
+      'Maintaining clear boundaries across backend modules and protected routes'
     ],
     solutions: [
       'Modular tariff calculation engine',
       'Responsive React component architecture',
       'Reusable UI system',
       'Optimized state management',
-      'Interactive dashboard visualizations'
+      'Interactive dashboard visualizations',
+      'Centralized validation, error handling, and structured logging'
     ],
     impact: 'Helps households understand electricity usage, predict future bills, and make informed decisions that reduce energy costs.',
     technologiesUsed: {
       frontend: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
       backend: ['Node.js', 'Express.js'],
-      database: ['MongoDB'],
-      deployment: ['Vercel']
+      database: ['MongoDB', 'Mongoose'],
+      tools: ['Zod', 'Vitest', 'Supertest', 'Swagger/OpenAPI']
+    },
+    implementationStatus: {
+      implemented: [
+        'Modular backend architecture with routes, controllers, services, models, and middleware',
+        'Registration, normalized email handling, duplicate detection, secure password hashing, and login',
+        'JWT verification middleware, protected routes, /auth/me, and safe user responses',
+        'Zod validation, centralized error handling, structured logging, API versioning, and health endpoint',
+        'Tariff and billing logic, meter readings, bill estimation, and prorated tariff calculations',
+        'Automated integration/boundary tests and Swagger/OpenAPI documentation'
+      ]
     }
   },
   {
     id: 'kawichchi',
-    title: 'Kawichchi Premium Furniture Website',
-    subtitle: 'Digital Transformation for a Luxury Furniture Brand',
-    description: 'A premium responsive website developed for Kawichchi Furniture to modernize its online presence and showcase custom furniture collections through an elegant digital experience.',
-    longDescription: 'A premium responsive website developed for Kawichchi Furniture to modernize its online presence and showcase custom furniture collections through an elegant digital experience. The platform emphasizes premium UI/UX, product presentation, project galleries, and streamlined customer engagement while reflecting the brand\'s craftsmanship and quality.',
+    title: 'Kawichchi — Custom Furniture Platform',
+    subtitle: 'Production Full-Stack Website for a Sri Lankan Furniture Business',
+    description: 'A production full-stack website developed for a Sri Lankan custom furniture business, taking the project from requirements and UI/UX through API integration, database implementation, deployment, and launch.',
+    longDescription: 'Kawichchi is a completed and launched full-stack business website for a Sri Lankan custom furniture company. The platform combines a premium responsive browsing experience with furniture and project showcases, gallery presentation, workshop and material storytelling, customer-focused navigation, WhatsApp inquiries, backend API integration, MongoDB content management, and production deployment.\n\nThe implementation covered business requirements, product experience, frontend development, backend integration, database work, deployment, debugging, and launch.',
     image: 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&q=80&w=800',
-    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB'],
+    tags: ['React', 'JavaScript', 'Vite', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'REST API', 'Vercel', 'Render'],
     liveUrl: 'https://kawichchi.com/',
     githubUrl: 'https://github.com/Thisari02/kawichchi-furniture',
     status: 'Completed',
     year: '2026',
     category: 'Business Website',
-    role: 'Full Stack Developer',
-    roleDescription: 'Designed and developed the website, admin dashboard and deployment.',
+    role: 'Full-Stack Developer / Product Developer',
+    roleDescription: 'Took the website from business requirements and UI/UX through full-stack implementation, content management functionality, deployment, debugging, and launch.',
     keyFeatures: [
-      'Premium responsive UI',
-      'Product showcase',
-      'Project gallery',
-      'Admin dashboard',
-      'Contact system',
-      'Interactive animations',
-      'Modern navigation',
-      'SEO optimization'
+      'Premium responsive website',
+      'Furniture and project showcase',
+      'Gallery and workshop storytelling',
+      'WhatsApp inquiry integration',
+      'Backend API integration',
+      'MongoDB content management',
+      'Production deployment and launch',
+      'Responsive customer browsing experience'
     ],
     challenges: [
-      'Creating a luxury user experience',
-      'Managing dynamic project content',
-      'Performance optimization',
-      'Responsive layouts across devices'
+      'Translating a furniture business into a premium digital experience',
+      'Managing dynamic project and content data',
+      'Connecting customer-facing pages to backend services',
+      'Preparing the application for deployment and launch'
     ],
     solutions: [
       'Component-based React architecture',
-      'Tailwind CSS design system',
-      'Optimized image loading',
-      'Reusable UI components',
-      'Modern animation techniques'
+      'Tailwind CSS and responsive layout patterns',
+      'REST API and MongoDB integration',
+      'Reusable showcase and content components',
+      'Deployment, debugging, and launch workflow'
     ],
     impact: 'Strengthens the company\'s online brand, improves customer engagement, and supports digital marketing and lead generation.',
     technologiesUsed: {

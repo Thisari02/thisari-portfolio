@@ -5,7 +5,7 @@ import {
   Sparkles, Atom, FileCode, Code, Wind, Monitor, Zap, 
   Server, Cpu, Workflow, Key, Database, HardDrive, 
   Flame, GitBranch, Github, Terminal, Laptop, PenTool, 
-  BookOpen, Cloud, Globe, Coffee, Layers, ShieldAlert, 
+  BookOpen, Cloud, Globe, Coffee, Layers, ShieldAlert, CheckCircle,
   Lightbulb, Layout, RefreshCw
 } from 'lucide-react';
 import { SKILLS } from '../data';
@@ -13,7 +13,7 @@ import { SKILLS } from '../data';
 const SKILL_ICONS: Record<string, LucideIcon> = {
   'React': Atom,
   'TypeScript': FileCode,
-  'JavaScript (ES6+)': Code,
+  'JavaScript': Code,
   'HTML5': Layers,
   'CSS3': Code,
   'Tailwind CSS': Wind,
@@ -22,8 +22,10 @@ const SKILL_ICONS: Record<string, LucideIcon> = {
   'Node.js': Server,
   'Express.js': Cpu,
   'REST API Development': Workflow,
-  'Authentication (JWT)': Key,
+  'Authentication & Authorization': Key,
   'CRUD Operations': Database,
+  'API Validation': ShieldAlert,
+  'Role-Based Access Control (RBAC)': Key,
   'MongoDB': HardDrive,
   'Firebase / Firestore': Flame,
   'MySQL': Database,
@@ -37,14 +39,14 @@ const SKILL_ICONS: Record<string, LucideIcon> = {
   'Vercel': Cloud,
   'Netlify': Globe,
   'Render': Server,
-  'JavaScript': Coffee,
-  'Python': Terminal,
-  'Java': Coffee,
+  'Vite': Zap,
   'Component-Based Architecture': Layers,
-  'Responsive UI Development': Laptop,
   'API Integration': Workflow,
+  'System Architecture': Workflow,
+  'Security-Aware Development': ShieldAlert,
+  'Data-Driven Architecture': Database,
+  'Testing & QA': CheckCircle,
   'Debugging & Troubleshooting': ShieldAlert,
-  'Version Control': GitBranch,
   'Problem Solving': Lightbulb,
   'UI/UX Implementation': Layout,
   'Performance Optimization': RefreshCw,
@@ -58,10 +60,8 @@ export default function SkillsSection() {
     { label: 'Frontend', id: 'Frontend Development' },
     { label: 'Backend', id: 'Backend Development' },
     { label: 'Database', id: 'Database' },
-    { label: 'Tools', id: 'Development Tools' },
-    { label: 'Cloud & Hosting', id: 'Deployment & Hosting' },
-    { label: 'Languages', id: 'Programming Languages' },
-    { label: 'Software Eng', id: 'Software Engineering' },
+    { label: 'Tools & DevOps', id: 'Development Tools' },
+    { label: 'Software Engineering', id: 'Software Engineering' },
   ];
 
   const filteredSkills = SKILLS.filter(

@@ -18,7 +18,7 @@ export default function ProjectsGrid() {
     { label: 'IoT & Edge', value: 'IoT Research Project' },
     { label: 'Web Apps', value: 'Web Application' },
     { label: 'Business Solutions', value: 'Business Website' },
-    { label: 'EdTech', value: 'EdTech / Educational Technology' },
+    { label: 'EdTech', value: 'EdTech' },
   ];
 
   const filteredProjects = PROJECTS.filter((project) => {
